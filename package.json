@@ -3,10 +3,22 @@
   "version": "1.0.0",
   "description": "Seja bem vindo(a) à sexta Semana Javascript Expert. Este é o código inicial para iniciar nossa jornada.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx nodemon server/index.js",
+    "start": "node server/index.js"
+  },
+  "engines": {
+    "node": "17"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "pino-pretty": "^7.5.3"
+  },
+  "dependencies": {
+    "pino": "^7.8.1"
+  }
 }
